@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;    
+}
+
+.container{
+    max-width: 800px;
+    margin: 60px auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.avatar{
+    max-width: 300px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 15px;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+  
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+    margin: 0;
+}
+  
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.info-text hr{
+    margin-bottom: 15px;
+} 
+.avatar{
+    max-width: 300px;
+    box-shadow: 12px 12px 2px 1px rgba(59, 59, 59, 0.2);
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #86898f;
+    transition: all .2s;
+}
+
+a:hover , a:focus , a:active{
+    color: darkgray;
+    cursor: pointer;
+}
+.cards{
+    padding-left: 30px;
+}
+.card{
+    margin-bottom: 20px;
+}
+
+.card h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.list{
+    margin-bottom: 5px;
+    list-style: none;
+    color: #86898f;
+}
+
+.table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th, td{
+    padding-bottom: 8px;
+    padding-left: 20px;
+    text-align: center;
+}
+.table th:first-child{
+    text-align: center;
+}
+
+.table td{
+    color: #86898f;
+}
+
+.form h2{
+    text-align: left;
+}
+
+.form-row{
+    margin-bottom: 15px;
+    gap: 15px;
+    display: flex;
+}
+
+.form-row .form-group{
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 20px); */
+}
+
+.form-row, .form-group:last-child{
+    margin-right: 0;
+}
+
+
+.form-group lable {
+    display: block;
+    font-size: 14px;    
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 10px;
+}
+
+.btn:hover, .btn:active, .btn:focus{
+    cursor: pointer;
+    background: rgb(59, 58, 58);
+}
+
+@media (max-width:768px){
+    .info{
+        margin: 0 25px 40px;
+    }
+    .card{
+        margin: 0 25px 25px 0;
+    }
+    .form{
+        margin: 0 25px 25px 0;
+    }
+}
+@media (max-width:740px){
+    .info{
+        margin: 0 25px 40px;
+        display: block;
+        box-sizing: border-box;
+    }
+    .info-text{
+        margin: 0;
+    }
+    .avatar{
+        max-width: 340px;
+    }
+    .card{
+        margin: 0 25px 25px 0;
+    }
+    .form{
+        margin: 0 25px 25px 0;
+    }
+}    
+@media (max-width:426px){
+    .container{
+        padding: 0 15px;
+    }
+    
+    .info {
+        margin-bottom: 20px;
+        display: block;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+    }
+    .avatar{
+        max-width: 340px;
+    }
+    .info-text{
+        margin: 0;
+    }    
+}
+@media (max-width:376px){
+    .container{
+        padding: 0 15px 0 30px;
+    }
+    .info{
+        margin: 0 5px 10px 5px;
+    }
+    .avatar{
+        max-width: 280px;
+    }
+    .cards{
+        padding: 0;
+    }
+    .form-row{        
+        display: block;
+    }
+    .form-row .form-group{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .list{
+        padding-left: 20px;
+    }
+    .table, tbody{
+        display: block;        
+    }
+    .table tr, td{
+        display: block;
+        text-align: left;
+        padding: 0 0 8px 10px;
+    }
+    .table th{
+        display: none;
+    }
+    
+}
+@media (max-width:351px){
+    .container{
+        padding: 0 15px 0 30px;
+    }
+    .info{
+        margin: 0 5px 10px 5px;
+    }
+    .avatar{
+        max-width: 280px;
+    }
+    .cards{
+        padding: 0;
+    }
+    .form-row{        
+        display: block;
+    }
+    .form-row .form-group{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .table, tbody{
+        display: block;        
+    }
+    .table tr, td{
+        display: block;
+    }
+    .table th{
+        display: none;
+    }
+}
+@media (max-width:321px){
+    .info{
+        margin: 0 5px 10px 5px;
+    }
+    .avatar{
+        max-width: 260px;
+    }
+    .cards{
+        padding: 0;
+    }
+    .form-row{        
+        display: block;
+    }
+    .form-row .form-group{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .table, tbody{
+        display: block;        
+    }
+    .table tr, td{
+        display: block;
+    }
+    .table th{
+        display: none;
+    }
+    
+}
